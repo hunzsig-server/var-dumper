@@ -35,10 +35,5 @@
     },
     "bin": [
         "Resources/bin/var-dump-server"
-    ],
-    "extra": {
-        "branch-alias": {
-            "dev-master": "4.4-dev"
-        }
-    }
+    ]
 }
