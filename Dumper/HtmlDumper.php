@@ -331,9 +331,6 @@ return function (root, x) {
     function isCtrlKey(e) {
         return e.ctrlKey || e.metaKey;
     }
-    function isAltKey(e) {
-        return e.altKey;
-    }
     function xpathString(str) {
         var parts = str.match(/[^'"]+|['"]/g).map(function (part) {
             if ("'" == part)  {
@@ -594,24 +591,6 @@ return function (root, x) {
                 e.preventDefault();
                 search.className = search.className.replace(/\bsf-dump-search-hidden\b/, '');
                 searchInput.focus();
-            } else if (isAltKey(e) && e.keyCode >= 49 && e.keyCode <= 50) {
-                /* Alt + Q */
-                var hSfdumps = document.querySelectorAll(".sf-dump");
-                var fontSize = hSfdumps[0].style.fontSize || 14;
-                var nextSize = parseInt(fontSize, 10);
-                console.log(nextSize);
-                if(e.keyCode === 49){
-                    nextSize -= 2;
-                }
-                else if(e.keyCode === 50){
-                    nextSize += 2;
-                }
-                if(nextSize < 12) nextSize = 12;
-                if(nextSize > 20) nextSize = 20;
-                nextSize += 'px';
-                for(var fd in hSfdumps){
-                    if(typeof hSfdumps[fd] === 'object') hSfdumps[fd].style.fontSize = nextSize;
-                }
             } else if (isSearchActive) {
                 if (27 === e.keyCode) {
                     /* ESC key */
@@ -662,6 +641,31 @@ return function (root, x) {
 };
 
 })(document);
+
+function isAltKey(e) {
+    return e.altKey;
+}
+document.addEventListener('keydown', function (e) {
+    if (isAltKey(e) && e.keyCode >= 49 && e.keyCode <= 50) {
+        /* Alt + 1|2 */
+        var hSfdumps = document.querySelectorAll(".sf-dump");
+        var fontSize = hSfdumps[0].style.fontSize || 14;
+        var nextSize = parseFloat(fontSize);
+        if(e.keyCode === 49){
+            nextSize -= 1;
+        }
+        else if(e.keyCode === 50){
+            nextSize += 1;
+        }
+        if(nextSize <= 12) nextSize = 12;
+        if(nextSize >= 22) nextSize = 22;
+        nextSize += 'px';
+        for(var fd in hSfdumps){
+            if(typeof hSfdumps[fd] === 'object') hSfdumps[fd].style.fontSize = nextSize;
+        }
+    }
+});
+
 </script><style>
 pre.sf-dump {
     display: block;
