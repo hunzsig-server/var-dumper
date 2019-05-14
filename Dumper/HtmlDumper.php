@@ -82,7 +82,7 @@ class HtmlDumper extends CliDumper
         AbstractDumper::__construct($output, $charset, $flags);
         $this->dumpId = 'sf-dump-' . mt_rand();
         $this->displayOptions['fileLinkFormat'] = ini_get('xdebug.file_link_format') ?: get_cfg_var('xdebug.file_link_format');
-        $this->styles = static::$themes['dark'] ?? self::$themes['dark'];
+        $this->styles = static::$themes['light'] ?? self::$themes['light'];
     }
 
     /**
@@ -330,6 +330,9 @@ return function (root, x) {
     };
     function isCtrlKey(e) {
         return e.ctrlKey || e.metaKey;
+    }
+    function isAltKey(e) {
+        return e.altKey;
     }
     function xpathString(str) {
         var parts = str.match(/[^'"]+|['"]/g).map(function (part) {
@@ -591,6 +594,24 @@ return function (root, x) {
                 e.preventDefault();
                 search.className = search.className.replace(/\bsf-dump-search-hidden\b/, '');
                 searchInput.focus();
+            } else if (isAltKey(e) && e.keyCode >= 49 && e.keyCode <= 50) {
+                /* Alt + Q */
+                var hSfdumps = document.querySelectorAll(".sf-dump");
+                var fontSize = hSfdumps[0].style.fontSize || 14;
+                var nextSize = parseInt(fontSize, 10);
+                console.log(nextSize);
+                if(e.keyCode === 49){
+                    nextSize -= 2;
+                }
+                else if(e.keyCode === 50){
+                    nextSize += 2;
+                }
+                if(nextSize < 12) nextSize = 12;
+                if(nextSize > 20) nextSize = 20;
+                nextSize += 'px';
+                for(var fd in hSfdumps){
+                    if(typeof hSfdumps[fd] === 'object') hSfdumps[fd].style.fontSize = nextSize;
+                }
             } else if (isSearchActive) {
                 if (27 === e.keyCode) {
                     /* ESC key */
