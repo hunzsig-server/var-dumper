@@ -1,5 +1,5 @@
 {
-    "name": "hunzsig-server/var-dumper",
+    "name": "yonna/var-dumper",
     "type": "library",
     "description": "Base on Symfony var-dumper",
     "keywords": ["dump", "debug"],
@@ -28,7 +28,7 @@
     },
     "autoload": {
         "files": [ "Resources/functions/dump.php" ],
-        "psr-4": { "Symfony\\Component\\VarDumper\\": "" },
+        "psr-4": { "Yonna\\VarDumper\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]
