@@ -1,7 +1,7 @@
 {
     "name": "yonna/var-dumper",
     "type": "library",
-    "description": "Base on Symfony var-dumper",
+    "description": "var-dumper库是yonna专用dumper包\n源于Symfony VarDumper",
     "keywords": ["dump", "debug"],
     "homepage": "https://www.hunzsig.org",
     "license": "MIT",
