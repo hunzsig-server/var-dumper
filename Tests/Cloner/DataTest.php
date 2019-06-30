@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Cloner;
+namespace Yonna\VarDumper\Tests\Cloner;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Caster\Caster;
-use Symfony\Component\VarDumper\Caster\ClassStub;
-use Symfony\Component\VarDumper\Cloner\Data;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Caster\Caster;
+use Yonna\VarDumper\Caster\ClassStub;
+use Yonna\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Cloner\VarCloner;
 
 class DataTest extends TestCase
 {

@@ -22,8 +22,8 @@ use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Logger\ConsoleLogger;
 use Symfony\Component\Console\Output\ConsoleOutput;
-use Symfony\Component\VarDumper\Command\ServerDumpCommand;
-use Symfony\Component\VarDumper\Server\DumpServer;
+use Yonna\VarDumper\Command\ServerDumpCommand;
+use Yonna\VarDumper\Server\DumpServer;
 
 function includeIfExists(string $file): bool
 {

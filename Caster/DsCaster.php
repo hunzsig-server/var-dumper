@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Caster;
+namespace Yonna\VarDumper\Caster;
 
 use Ds\Collection;
 use Ds\Map;
 use Ds\Pair;
-use Symfony\Component\VarDumper\Cloner\Stub;
+use Yonna\VarDumper\Cloner\Stub;
 
 /**
  * Casts Ds extension classes to array representation.

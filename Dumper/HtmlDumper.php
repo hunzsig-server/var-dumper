@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Dumper;
+namespace Yonna\VarDumper\Dumper;
 
-use Symfony\Component\VarDumper\Cloner\Cursor;
-use Symfony\Component\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Cloner\Cursor;
+use Yonna\VarDumper\Cloner\Data;
 
 /**
  * HtmlDumper dumps variables as HTML.

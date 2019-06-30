@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Dumper;
+namespace Yonna\VarDumper\Dumper;
 
-use Symfony\Component\VarDumper\Cloner\Cursor;
-use Symfony\Component\VarDumper\Cloner\Stub;
+use Yonna\VarDumper\Cloner\Cursor;
+use Yonna\VarDumper\Cloner\Stub;
 
 /**
  * CliDumper dumps variables for command line output.

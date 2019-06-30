@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Dumper;
+namespace Yonna\VarDumper\Tests\Dumper;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Process\PhpProcess;
 use Symfony\Component\Process\Process;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\ContextProvider\ContextProviderInterface;
-use Symfony\Component\VarDumper\Dumper\DataDumperInterface;
-use Symfony\Component\VarDumper\Dumper\ServerDumper;
+use Yonna\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Dumper\ContextProvider\ContextProviderInterface;
+use Yonna\VarDumper\Dumper\DataDumperInterface;
+use Yonna\VarDumper\Dumper\ServerDumper;
 
 class ServerDumperTest extends TestCase
 {

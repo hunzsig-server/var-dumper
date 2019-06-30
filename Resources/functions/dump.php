@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use Symfony\Component\VarDumper\VarDumper;
+use Yonna\VarDumper\VarDumper;
 
 if (!function_exists('dump')) {
     /**

@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Command\Descriptor;
+namespace Yonna\VarDumper\Command\Descriptor;
 
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-use Symfony\Component\VarDumper\Cloner\Data;
-use Symfony\Component\VarDumper\Dumper\CliDumper;
+use Yonna\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Dumper\CliDumper;
 
 /**
  * Describe collected data clones for cli output.

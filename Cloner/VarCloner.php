@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Cloner;
+namespace Yonna\VarDumper\Cloner;
 
 /**
  * @author Nicolas Grekas <p@tchwork.com>

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Cloner;
+namespace Yonna\VarDumper\Tests\Cloner;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Cloner\VarCloner;
 
 /**
  * @author Nicolas Grekas <p@tchwork.com>
@@ -27,9 +27,9 @@ class VarClonerTest extends TestCase
         $clone = $cloner->cloneVar($data);
 
         $expected = <<<EOTXT
-Symfony\Component\VarDumper\Cloner\Data Object
+Yonna\VarDumper\Cloner\Data Object
 (
-    [data:Symfony\Component\VarDumper\Cloner\Data:private] => Array
+    [data:Yonna\VarDumper\Cloner\Data:private] => Array
         (
             [0] => Array
                 (
@@ -47,11 +47,11 @@ Symfony\Component\VarDumper\Cloner\Data Object
 
         )
 
-    [position:Symfony\Component\VarDumper\Cloner\Data:private] => 0
-    [key:Symfony\Component\VarDumper\Cloner\Data:private] => 0
-    [maxDepth:Symfony\Component\VarDumper\Cloner\Data:private] => 20
-    [maxItemsPerDepth:Symfony\Component\VarDumper\Cloner\Data:private] => -1
-    [useRefHandles:Symfony\Component\VarDumper\Cloner\Data:private] => -1
+    [position:Yonna\VarDumper\Cloner\Data:private] => 0
+    [key:Yonna\VarDumper\Cloner\Data:private] => 0
+    [maxDepth:Yonna\VarDumper\Cloner\Data:private] => 20
+    [maxItemsPerDepth:Yonna\VarDumper\Cloner\Data:private] => -1
+    [useRefHandles:Yonna\VarDumper\Cloner\Data:private] => -1
 )
 
 EOTXT;
@@ -66,13 +66,13 @@ EOTXT;
         $clone = $cloner->cloneVar($json);
 
         $expected = <<<EOTXT
-Symfony\Component\VarDumper\Cloner\Data Object
+Yonna\VarDumper\Cloner\Data Object
 (
-    [data:Symfony\Component\VarDumper\Cloner\Data:private] => Array
+    [data:Yonna\VarDumper\Cloner\Data:private] => Array
         (
             [0] => Array
                 (
-                    [0] => Symfony\Component\VarDumper\Cloner\Stub Object
+                    [0] => Yonna\VarDumper\Cloner\Stub Object
                         (
                             [type] => 4
                             [class] => stdClass
@@ -91,7 +91,7 @@ Symfony\Component\VarDumper\Cloner\Data Object
 
             [1] => Array
                 (
-                    [\000+\0001] => Symfony\Component\VarDumper\Cloner\Stub Object
+                    [\000+\0001] => Yonna\VarDumper\Cloner\Stub Object
                         (
                             [type] => 4
                             [class] => stdClass
@@ -106,7 +106,7 @@ Symfony\Component\VarDumper\Cloner\Data Object
 
                         )
 
-                    [\000+\0002] => Symfony\Component\VarDumper\Cloner\Stub Object
+                    [\000+\0002] => Yonna\VarDumper\Cloner\Stub Object
                         (
                             [type] => 4
                             [class] => stdClass
@@ -135,11 +135,11 @@ Symfony\Component\VarDumper\Cloner\Data Object
 
         )
 
-    [position:Symfony\Component\VarDumper\Cloner\Data:private] => 0
-    [key:Symfony\Component\VarDumper\Cloner\Data:private] => 0
-    [maxDepth:Symfony\Component\VarDumper\Cloner\Data:private] => 20
-    [maxItemsPerDepth:Symfony\Component\VarDumper\Cloner\Data:private] => -1
-    [useRefHandles:Symfony\Component\VarDumper\Cloner\Data:private] => -1
+    [position:Yonna\VarDumper\Cloner\Data:private] => 0
+    [key:Yonna\VarDumper\Cloner\Data:private] => 0
+    [maxDepth:Yonna\VarDumper\Cloner\Data:private] => 20
+    [maxItemsPerDepth:Yonna\VarDumper\Cloner\Data:private] => -1
+    [useRefHandles:Yonna\VarDumper\Cloner\Data:private] => -1
 )
 
 EOTXT;
@@ -193,9 +193,9 @@ EOTXT;
         $clone = $cloner->cloneVar($data);
 
         $expected = <<<EOTXT
-Symfony\Component\VarDumper\Cloner\Data Object
+Yonna\VarDumper\Cloner\Data Object
 (
-    [data:Symfony\Component\VarDumper\Cloner\Data:private] => Array
+    [data:Yonna\VarDumper\Cloner\Data:private] => Array
         (
             [0] => Array
                 (
@@ -270,7 +270,7 @@ Symfony\Component\VarDumper\Cloner\Data Object
 
             [5] => Array
                 (
-                    [0] => Symfony\Component\VarDumper\Cloner\Stub Object
+                    [0] => Yonna\VarDumper\Cloner\Stub Object
                         (
                             [type] => 2
                             [class] => 2
@@ -303,11 +303,11 @@ Symfony\Component\VarDumper\Cloner\Data Object
 
         )
 
-    [position:Symfony\Component\VarDumper\Cloner\Data:private] => 0
-    [key:Symfony\Component\VarDumper\Cloner\Data:private] => 0
-    [maxDepth:Symfony\Component\VarDumper\Cloner\Data:private] => 20
-    [maxItemsPerDepth:Symfony\Component\VarDumper\Cloner\Data:private] => -1
-    [useRefHandles:Symfony\Component\VarDumper\Cloner\Data:private] => -1
+    [position:Yonna\VarDumper\Cloner\Data:private] => 0
+    [key:Yonna\VarDumper\Cloner\Data:private] => 0
+    [maxDepth:Yonna\VarDumper\Cloner\Data:private] => 20
+    [maxItemsPerDepth:Yonna\VarDumper\Cloner\Data:private] => -1
+    [useRefHandles:Yonna\VarDumper\Cloner\Data:private] => -1
 )
 
 EOTXT;
@@ -326,8 +326,8 @@ EOTXT;
         $clone = $cloner->cloneVar($data);
 
         $expected = <<<'EOTXT'
-object(Symfony\Component\VarDumper\Cloner\Data)#%i (6) {
-  ["data":"Symfony\Component\VarDumper\Cloner\Data":private]=>
+object(Yonna\VarDumper\Cloner\Data)#%i (6) {
+  ["data":"Yonna\VarDumper\Cloner\Data":private]=>
   array(2) {
     [0]=>
     array(1) {
@@ -340,7 +340,7 @@ object(Symfony\Component\VarDumper\Cloner\Data)#%i (6) {
     [1]=>
     array(1) {
       ["1"]=>
-      object(Symfony\Component\VarDumper\Cloner\Stub)#%i (8) {
+      object(Yonna\VarDumper\Cloner\Stub)#%i (8) {
         ["type"]=>
         int(4)
         ["class"]=>
@@ -361,15 +361,15 @@ object(Symfony\Component\VarDumper\Cloner\Data)#%i (6) {
       }
     }
   }
-  ["position":"Symfony\Component\VarDumper\Cloner\Data":private]=>
+  ["position":"Yonna\VarDumper\Cloner\Data":private]=>
   int(0)
-  ["key":"Symfony\Component\VarDumper\Cloner\Data":private]=>
+  ["key":"Yonna\VarDumper\Cloner\Data":private]=>
   int(0)
-  ["maxDepth":"Symfony\Component\VarDumper\Cloner\Data":private]=>
+  ["maxDepth":"Yonna\VarDumper\Cloner\Data":private]=>
   int(20)
-  ["maxItemsPerDepth":"Symfony\Component\VarDumper\Cloner\Data":private]=>
+  ["maxItemsPerDepth":"Yonna\VarDumper\Cloner\Data":private]=>
   int(-1)
-  ["useRefHandles":"Symfony\Component\VarDumper\Cloner\Data":private]=>
+  ["useRefHandles":"Yonna\VarDumper\Cloner\Data":private]=>
   int(-1)
 }
 
@@ -394,13 +394,13 @@ EOTXT;
         $clone = $cloner->cloneVar($this);
 
         $expected = <<<EOTXT
-Symfony\Component\VarDumper\Cloner\Data Object
+Yonna\VarDumper\Cloner\Data Object
 (
-    [data:Symfony\Component\VarDumper\Cloner\Data:private] => Array
+    [data:Yonna\VarDumper\Cloner\Data:private] => Array
         (
             [0] => Array
                 (
-                    [0] => Symfony\Component\VarDumper\Cloner\Stub Object
+                    [0] => Yonna\VarDumper\Cloner\Stub Object
                         (
                             [type] => 4
                             [class] => %s
@@ -426,11 +426,11 @@ Symfony\Component\VarDumper\Cloner\Data Object
 
         )
 
-    [position:Symfony\Component\VarDumper\Cloner\Data:private] => 0
-    [key:Symfony\Component\VarDumper\Cloner\Data:private] => 0
-    [maxDepth:Symfony\Component\VarDumper\Cloner\Data:private] => 20
-    [maxItemsPerDepth:Symfony\Component\VarDumper\Cloner\Data:private] => -1
-    [useRefHandles:Symfony\Component\VarDumper\Cloner\Data:private] => -1
+    [position:Yonna\VarDumper\Cloner\Data:private] => 0
+    [key:Yonna\VarDumper\Cloner\Data:private] => 0
+    [maxDepth:Yonna\VarDumper\Cloner\Data:private] => 20
+    [maxItemsPerDepth:Yonna\VarDumper\Cloner\Data:private] => -1
+    [useRefHandles:Yonna\VarDumper\Cloner\Data:private] => -1
 )
 
 EOTXT;

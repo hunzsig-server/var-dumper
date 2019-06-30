@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Caster;
+namespace Yonna\VarDumper\Caster;
 
 use Doctrine\Common\Proxy\Proxy as CommonProxy;
 use Doctrine\ORM\PersistentCollection;
 use Doctrine\ORM\Proxy\Proxy as OrmProxy;
-use Symfony\Component\VarDumper\Cloner\Stub;
+use Yonna\VarDumper\Cloner\Stub;
 
 /**
  * Casts Doctrine related classes to array representation.

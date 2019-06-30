@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Dumper\ContextProvider;
+namespace Yonna\VarDumper\Dumper\ContextProvider;
 
 /**
  * Tries to provide context on CLI.

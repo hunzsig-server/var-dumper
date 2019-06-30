@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Caster;
+namespace Yonna\VarDumper\Caster;
 
-use Symfony\Component\VarDumper\Cloner\Stub;
+use Yonna\VarDumper\Cloner\Stub;
 
 /**
  * Casts XmlReader class to array representation.

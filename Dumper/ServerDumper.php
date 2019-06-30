@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Dumper;
+namespace Yonna\VarDumper\Dumper;
 
-use Symfony\Component\VarDumper\Cloner\Data;
-use Symfony\Component\VarDumper\Dumper\ContextProvider\ContextProviderInterface;
-use Symfony\Component\VarDumper\Server\Connection;
+use Yonna\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Dumper\ContextProvider\ContextProviderInterface;
+use Yonna\VarDumper\Server\Connection;
 
 /**
  * ServerDumper forwards serialized Data clones to a server.

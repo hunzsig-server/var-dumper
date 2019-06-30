@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Caster;
+namespace Yonna\VarDumper\Tests\Caster;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Caster\ArgsStub;
-use Symfony\Component\VarDumper\Caster\ClassStub;
-use Symfony\Component\VarDumper\Caster\LinkStub;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\HtmlDumper;
-use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
-use Symfony\Component\VarDumper\Tests\Fixtures\FooInterface;
+use Yonna\VarDumper\Caster\ArgsStub;
+use Yonna\VarDumper\Caster\ClassStub;
+use Yonna\VarDumper\Caster\LinkStub;
+use Yonna\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Dumper\HtmlDumper;
+use Yonna\VarDumper\Test\VarDumperTestTrait;
+use Yonna\VarDumper\Tests\Fixtures\FooInterface;
 
 class StubCasterTest extends TestCase
 {
@@ -100,7 +100,7 @@ EODUMP;
 
         $expectedDump = <<<'EODUMP'
 <foo></foo><bar><span class=sf-dump-note>array:1</span> [<samp>
-  <span class=sf-dump-index>0</span> => "<a href="%sStubCasterTest.php:0" rel="noopener noreferrer"><span class=sf-dump-str title="55 characters">Symfony\Component\VarDumper\Tests\Caster\StubCasterTest</span></a>"
+  <span class=sf-dump-index>0</span> => "<a href="%sStubCasterTest.php:0" rel="noopener noreferrer"><span class=sf-dump-str title="55 characters">Yonna\VarDumper\Tests\Caster\StubCasterTest</span></a>"
 </samp>]
 </bar>
 EODUMP;
@@ -161,8 +161,8 @@ EODUMP;
 
         $expectedDump = <<<'EODUMP'
 <foo></foo><bar><span class=sf-dump-note>array:1</span> [<samp>
-  <span class=sf-dump-index>0</span> => "<span class=sf-dump-str title="Symfony\Component\VarDumper\Tests\Caster\NotExisting
-52 characters"><span class="sf-dump-ellipsis sf-dump-ellipsis-class">Symfony\Component\VarDumper\Tests\Caster</span><span class=sf-dump-ellipsis>\</span>NotExisting</span>"
+  <span class=sf-dump-index>0</span> => "<span class=sf-dump-str title="Yonna\VarDumper\Tests\Caster\NotExisting
+52 characters"><span class="sf-dump-ellipsis sf-dump-ellipsis-class">Yonna\VarDumper\Tests\Caster</span><span class=sf-dump-ellipsis>\</span>NotExisting</span>"
 </samp>]
 </bar>
 EODUMP;

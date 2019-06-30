@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Caster;
+namespace Yonna\VarDumper\Caster;
 
 use Symfony\Component\Debug\Exception\SilencedErrorContext;
-use Symfony\Component\VarDumper\Cloner\Stub;
-use Symfony\Component\VarDumper\Exception\ThrowingCasterException;
+use Yonna\VarDumper\Cloner\Stub;
+use Yonna\VarDumper\Exception\ThrowingCasterException;
 
 /**
  * Casts common Exception classes to array representation.

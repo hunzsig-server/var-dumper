@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Dumper\ContextProvider;
+namespace Yonna\VarDumper\Dumper\ContextProvider;
 
 use Symfony\Component\HttpKernel\Debug\FileLinkFormatter;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\HtmlDumper;
-use Symfony\Component\VarDumper\VarDumper;
+use Yonna\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Dumper\HtmlDumper;
+use Yonna\VarDumper\VarDumper;
 use Twig\Template;
 
 /**

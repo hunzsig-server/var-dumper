@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Caster;
+namespace Yonna\VarDumper\Caster;
 
-use Symfony\Component\VarDumper\Cloner\Stub;
+use Yonna\VarDumper\Cloner\Stub;
 
 /**
  * Represents a backtrace as returned by debug_backtrace() or Exception->getTrace().

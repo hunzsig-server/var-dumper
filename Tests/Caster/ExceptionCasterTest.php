@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Caster;
+namespace Yonna\VarDumper\Tests\Caster;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Caster\Caster;
-use Symfony\Component\VarDumper\Caster\ExceptionCaster;
-use Symfony\Component\VarDumper\Caster\FrameStub;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\HtmlDumper;
-use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
+use Yonna\VarDumper\Caster\Caster;
+use Yonna\VarDumper\Caster\ExceptionCaster;
+use Yonna\VarDumper\Caster\FrameStub;
+use Yonna\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Dumper\HtmlDumper;
+use Yonna\VarDumper\Test\VarDumperTestTrait;
 
 class ExceptionCasterTest extends TestCase
 {
@@ -52,7 +52,7 @@ Exception {
       › }
     }
     %s%eTests%eCaster%eExceptionCasterTest.php:40 { …}
-    Symfony\Component\VarDumper\Tests\Caster\ExceptionCasterTest->testDefaultSettings() {}
+    Yonna\VarDumper\Tests\Caster\ExceptionCasterTest->testDefaultSettings() {}
 %A
 EODUMP;
 
@@ -72,7 +72,7 @@ EODUMP;
     › }
   }
   %s%eTests%eCaster%eExceptionCasterTest.php:65 { …}
-  Symfony\Component\VarDumper\Tests\Caster\ExceptionCasterTest->testSeek() {}
+  Yonna\VarDumper\Tests\Caster\ExceptionCasterTest->testSeek() {}
 %A
 EODUMP;
 
@@ -97,7 +97,7 @@ Exception {
       › }
     }
     %s%eTests%eCaster%eExceptionCasterTest.php:84 { …}
-    Symfony\Component\VarDumper\Tests\Caster\ExceptionCasterTest->testNoArgs() {}
+    Yonna\VarDumper\Tests\Caster\ExceptionCasterTest->testNoArgs() {}
 %A
 EODUMP;
 

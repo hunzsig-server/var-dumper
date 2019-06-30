@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Server;
+namespace Yonna\VarDumper\Tests\Server;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Process\PhpProcess;
 use Symfony\Component\Process\Process;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\ContextProvider\ContextProviderInterface;
-use Symfony\Component\VarDumper\Server\Connection;
+use Yonna\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Dumper\ContextProvider\ContextProviderInterface;
+use Yonna\VarDumper\Server\Connection;
 
 class ConnectionTest extends TestCase
 {

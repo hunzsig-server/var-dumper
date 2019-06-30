@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Exception;
+namespace Yonna\VarDumper\Exception;
 
 /**
  * @author Nicolas Grekas <p@tchwork.com>

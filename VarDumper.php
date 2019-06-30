@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper;
+namespace Yonna\VarDumper;
 
-use Symfony\Component\VarDumper\Caster\ReflectionCaster;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\CliDumper;
-use Symfony\Component\VarDumper\Dumper\HtmlDumper;
+use Yonna\VarDumper\Caster\ReflectionCaster;
+use Yonna\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Dumper\CliDumper;
+use Yonna\VarDumper\Dumper\HtmlDumper;
 
 // Load the global dump() function
 require_once __DIR__.'/Resources/functions/dump.php';

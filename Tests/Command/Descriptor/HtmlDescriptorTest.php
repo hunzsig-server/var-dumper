@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Command\Descriptor;
+namespace Yonna\VarDumper\Tests\Command\Descriptor;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Output\BufferedOutput;
-use Symfony\Component\VarDumper\Cloner\Data;
-use Symfony\Component\VarDumper\Command\Descriptor\HtmlDescriptor;
-use Symfony\Component\VarDumper\Dumper\HtmlDumper;
+use Yonna\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Command\Descriptor\HtmlDescriptor;
+use Yonna\VarDumper\Dumper\HtmlDumper;
 
 class HtmlDescriptorTest extends TestCase
 {

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Caster;
+namespace Yonna\VarDumper\Tests\Caster;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
+use Yonna\VarDumper\Test\VarDumperTestTrait;
 
 /**
  * @requires extension intl

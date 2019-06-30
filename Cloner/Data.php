@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Cloner;
+namespace Yonna\VarDumper\Cloner;
 
-use Symfony\Component\VarDumper\Caster\Caster;
+use Yonna\VarDumper\Caster\Caster;
 
 /**
  * @author Nicolas Grekas <p@tchwork.com>

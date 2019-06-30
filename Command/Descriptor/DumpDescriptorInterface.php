@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Command\Descriptor;
+namespace Yonna\VarDumper\Command\Descriptor;
 
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Cloner\Data;
 
 /**
  * @author Maxime Steinhausser <maxime.steinhausser@gmail.com>

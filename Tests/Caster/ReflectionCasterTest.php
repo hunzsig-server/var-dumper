@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Caster;
+namespace Yonna\VarDumper\Tests\Caster;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Caster\Caster;
-use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
-use Symfony\Component\VarDumper\Tests\Fixtures\GeneratorDemo;
-use Symfony\Component\VarDumper\Tests\Fixtures\NotLoadableClass;
+use Yonna\VarDumper\Caster\Caster;
+use Yonna\VarDumper\Test\VarDumperTestTrait;
+use Yonna\VarDumper\Tests\Fixtures\GeneratorDemo;
+use Yonna\VarDumper\Tests\Fixtures\NotLoadableClass;
 
 /**
  * @author Nicolas Grekas <p@tchwork.com>
@@ -95,8 +95,8 @@ EOTXT
         $this->assertDumpMatchesFormat(
             <<<EOTXT
 array:2 [
-  0 => Symfony\Component\VarDumper\Tests\Caster\ReflectionCasterTest::testFromCallableClosureCaster() {
-    this: Symfony\Component\VarDumper\Tests\Caster\ReflectionCasterTest { …}
+  0 => Yonna\VarDumper\Tests\Caster\ReflectionCasterTest::testFromCallableClosureCaster() {
+    this: Yonna\VarDumper\Tests\Caster\ReflectionCasterTest { …}
     file: "%sReflectionCasterTest.php"
     line: "%d to %d"
   }
@@ -126,7 +126,7 @@ EOTXT
 ReflectionParameter {
   +name: "arg1"
   position: 0
-  typeHint: "Symfony\Component\VarDumper\Tests\Fixtures\NotLoadableClass"
+  typeHint: "Yonna\VarDumper\Tests\Fixtures\NotLoadableClass"
   default: null
 }
 EOTXT
@@ -160,8 +160,8 @@ EOTXT
             <<<EOTXT
 Closure(): int {
   returnType: "int"
-  class: "Symfony\Component\VarDumper\Tests\Caster\ReflectionCasterTest"
-  this: Symfony\Component\VarDumper\Tests\Caster\ReflectionCasterTest { …}
+  class: "Yonna\VarDumper\Tests\Caster\ReflectionCasterTest"
+  this: Yonna\VarDumper\Tests\Caster\ReflectionCasterTest { …}
   file: "%sReflectionCasterTest.php($line) : eval()'d code"
   line: "1 to 1"
 }
@@ -181,9 +181,9 @@ EOTXT
 
         $expectedDump = <<<'EODUMP'
 Generator {
-  this: Symfony\Component\VarDumper\Tests\Fixtures\GeneratorDemo { …}
+  this: Yonna\VarDumper\Tests\Fixtures\GeneratorDemo { …}
   executing: {
-    Symfony\Component\VarDumper\Tests\Fixtures\GeneratorDemo->baz() {
+    Yonna\VarDumper\Tests\Fixtures\GeneratorDemo->baz() {
       %sGeneratorDemo.php:14 {
         › {
         ›     yield from bar();
@@ -204,7 +204,7 @@ EODUMP;
         $expectedDump = <<<'EODUMP'
 array:2 [
   0 => ReflectionGenerator {
-    this: Symfony\Component\VarDumper\Tests\Fixtures\GeneratorDemo { …}
+    this: Yonna\VarDumper\Tests\Fixtures\GeneratorDemo { …}
     trace: {
       %s%eTests%eFixtures%eGeneratorDemo.php:9 {
         › {
@@ -218,7 +218,7 @@ array:2 [
   }
   1 => Generator {
     executing: {
-      Symfony\Component\VarDumper\Tests\Fixtures\GeneratorDemo::foo() {
+      Yonna\VarDumper\Tests\Fixtures\GeneratorDemo::foo() {
         %sGeneratorDemo.php:10 {
           ›     yield 1;
           › }

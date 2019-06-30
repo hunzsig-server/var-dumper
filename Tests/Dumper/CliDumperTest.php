@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Dumper;
+namespace Yonna\VarDumper\Tests\Dumper;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\CliDumper;
-use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
+use Yonna\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Dumper\CliDumper;
+use Yonna\VarDumper\Test\VarDumperTestTrait;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
@@ -74,13 +74,13 @@ array:24 [
     seekable: true
 %A  options: []
   }
-  "obj" => Symfony\Component\VarDumper\Tests\Fixture\DumbFoo {#%d
+  "obj" => Yonna\VarDumper\Tests\Fixture\DumbFoo {#%d
     +foo: "foo"
     +"bar": "bar"
   }
   "closure" => Closure(\$a, PDO &\$b = null) {#%d
-    class: "Symfony\Component\VarDumper\Tests\Dumper\CliDumperTest"
-    this: Symfony\Component\VarDumper\Tests\Dumper\CliDumperTest {#%d …}
+    class: "Yonna\VarDumper\Tests\Dumper\CliDumperTest"
+    this: Yonna\VarDumper\Tests\Dumper\CliDumperTest {#%d …}
     file: "%s%eTests%eFixtures%edumb-var.php"
     line: "{$var['line']} to {$var['line']}"
   }
@@ -92,7 +92,7 @@ array:24 [
     0 => &4 array:1 [&4]
   ]
   8 => &1 null
-  "sobj" => Symfony\Component\VarDumper\Tests\Fixture\DumbFoo {#%d}
+  "sobj" => Yonna\VarDumper\Tests\Fixture\DumbFoo {#%d}
   "snobj" => &3 {#%d}
   "snobj2" => {#%d}
   "file" => "{$var['file']}"
@@ -378,7 +378,7 @@ EOTXT
         $this->assertStringMatchesFormat(
             <<<EOTXT
 stream resource {@{$ref}
-  ⚠: Symfony\Component\VarDumper\Exception\ThrowingCasterException {#%d
+  ⚠: Yonna\VarDumper\Exception\ThrowingCasterException {#%d
     #message: "Unexpected Exception thrown from a caster: Foobar"
     trace: {
       %sTwig.php:2 {

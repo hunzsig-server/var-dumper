@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Caster;
+namespace Yonna\VarDumper\Tests\Caster;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Caster\GmpCaster;
-use Symfony\Component\VarDumper\Cloner\Stub;
-use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
+use Yonna\VarDumper\Caster\GmpCaster;
+use Yonna\VarDumper\Cloner\Stub;
+use Yonna\VarDumper\Test\VarDumperTestTrait;
 
 class GmpCasterTest extends TestCase
 {

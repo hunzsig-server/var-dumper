@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Test;
+namespace Yonna\VarDumper\Tests\Test;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
+use Yonna\VarDumper\Test\VarDumperTestTrait;
 
 class VarDumperTestTraitTest extends TestCase
 {

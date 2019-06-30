@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Caster;
+namespace Yonna\VarDumper\Tests\Caster;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
+use Yonna\VarDumper\Test\VarDumperTestTrait;
 
 /**
  * @author Grégoire Pineau <lyrixx@lyrixx.info>
@@ -188,7 +188,7 @@ EOTXT;
         $var = new MyArrayIterator([234]);
 
         $expected = <<<EOTXT
-Symfony\Component\VarDumper\Tests\Caster\MyArrayIterator {
+Yonna\VarDumper\Tests\Caster\MyArrayIterator {
   -foo: 123
   flag::STD_PROP_LIST: false
   flag::ARRAY_AS_PROPS: false

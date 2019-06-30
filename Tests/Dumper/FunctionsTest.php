@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Dumper;
+namespace Yonna\VarDumper\Tests\Dumper;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\CliDumper;
-use Symfony\Component\VarDumper\VarDumper;
+use Yonna\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Dumper\CliDumper;
+use Yonna\VarDumper\VarDumper;
 
 class FunctionsTest extends TestCase
 {

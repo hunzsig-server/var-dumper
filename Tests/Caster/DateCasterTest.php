@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Caster;
+namespace Yonna\VarDumper\Tests\Caster;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\VarDumper\Caster\Caster;
-use Symfony\Component\VarDumper\Caster\DateCaster;
-use Symfony\Component\VarDumper\Cloner\Stub;
-use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
+use Yonna\VarDumper\Caster\Caster;
+use Yonna\VarDumper\Caster\DateCaster;
+use Yonna\VarDumper\Cloner\Stub;
+use Yonna\VarDumper\Test\VarDumperTestTrait;
 
 /**
  * @author Dany Maillard <danymaillard93b@gmail.com>
@@ -58,7 +58,7 @@ EODUMP;
         $this->assertDumpEquals($xDump, $cast);
 
         $xDump = <<<EODUMP
-Symfony\Component\VarDumper\Caster\ConstStub {
+Yonna\VarDumper\Caster\ConstStub {
   +type: 1
   +class: "$xDate"
   +value: "%A$xInfos%A"
@@ -156,7 +156,7 @@ EODUMP;
         }
 
         $xDump = <<<EODUMP
-Symfony\Component\VarDumper\Caster\ConstStub {
+Yonna\VarDumper\Caster\ConstStub {
   +type: 1
   +class: "$xInterval"
   +value: "$xSeconds"
@@ -255,7 +255,7 @@ EODUMP;
         $this->assertDumpMatchesFormat($xDump, $cast);
 
         $xDump = <<<EODUMP
-Symfony\Component\VarDumper\Caster\ConstStub {
+Yonna\VarDumper\Caster\ConstStub {
   +type: 1
   +class: "$xTimezone"
   +value: "$xRegion"
@@ -332,7 +332,7 @@ EODUMP;
         $this->assertDumpEquals($xDump, $cast);
 
         $xDump = <<<EODUMP
-Symfony\Component\VarDumper\Caster\ConstStub {
+Yonna\VarDumper\Caster\ConstStub {
   +type: 1
   +class: "$xPeriod"
   +value: "%A$xDates%A"

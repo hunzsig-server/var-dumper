@@ -1,10 +1,10 @@
 <?php
 
-use Symfony\Component\VarDumper\Cloner\Data;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\CliDumper;
-use Symfony\Component\VarDumper\Server\DumpServer;
-use Symfony\Component\VarDumper\VarDumper;
+use Yonna\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Dumper\CliDumper;
+use Yonna\VarDumper\Server\DumpServer;
+use Yonna\VarDumper\VarDumper;
 
 $componentRoot = $_SERVER['COMPONENT_ROOT'];
 

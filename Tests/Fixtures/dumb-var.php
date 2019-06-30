@@ -1,8 +1,8 @@
 <?php
 
-namespace Symfony\Component\VarDumper\Tests\Fixture;
+namespace Yonna\VarDumper\Tests\Fixture;
 
-if (!class_exists('Symfony\Component\VarDumper\Tests\Fixture\DumbFoo')) {
+if (!class_exists('Yonna\VarDumper\Tests\Fixture\DumbFoo')) {
     class DumbFoo
     {
         public $foo = 'foo';

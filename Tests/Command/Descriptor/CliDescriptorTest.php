@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Tests\Command\Descriptor;
+namespace Yonna\VarDumper\Tests\Command\Descriptor;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use Symfony\Component\Console\Output\BufferedOutput;
-use Symfony\Component\VarDumper\Cloner\Data;
-use Symfony\Component\VarDumper\Command\Descriptor\CliDescriptor;
-use Symfony\Component\VarDumper\Dumper\CliDumper;
+use Yonna\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Command\Descriptor\CliDescriptor;
+use Yonna\VarDumper\Dumper\CliDumper;
 
 class CliDescriptorTest extends TestCase
 {

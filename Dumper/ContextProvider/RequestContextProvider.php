@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Dumper\ContextProvider;
+namespace Yonna\VarDumper\Dumper\ContextProvider;
 
 use Symfony\Component\HttpFoundation\RequestStack;
-use Symfony\Component\VarDumper\Caster\ReflectionCaster;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
+use Yonna\VarDumper\Caster\ReflectionCaster;
+use Yonna\VarDumper\Cloner\VarCloner;
 
 /**
  * Tries to provide context from a request.

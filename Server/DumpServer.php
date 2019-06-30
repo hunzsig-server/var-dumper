@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Server;
+namespace Yonna\VarDumper\Server;
 
 use Psr\Log\LoggerInterface;
-use Symfony\Component\VarDumper\Cloner\Data;
-use Symfony\Component\VarDumper\Cloner\Stub;
+use Yonna\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Cloner\Stub;
 
 /**
  * A server collecting Data clones sent by a ServerDumper.

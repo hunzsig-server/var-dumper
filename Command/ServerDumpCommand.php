@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\VarDumper\Command;
+namespace Yonna\VarDumper\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Exception\InvalidArgumentException;
@@ -17,13 +17,13 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-use Symfony\Component\VarDumper\Cloner\Data;
-use Symfony\Component\VarDumper\Command\Descriptor\CliDescriptor;
-use Symfony\Component\VarDumper\Command\Descriptor\DumpDescriptorInterface;
-use Symfony\Component\VarDumper\Command\Descriptor\HtmlDescriptor;
-use Symfony\Component\VarDumper\Dumper\CliDumper;
-use Symfony\Component\VarDumper\Dumper\HtmlDumper;
-use Symfony\Component\VarDumper\Server\DumpServer;
+use Yonna\VarDumper\Cloner\Data;
+use Yonna\VarDumper\Command\Descriptor\CliDescriptor;
+use Yonna\VarDumper\Command\Descriptor\DumpDescriptorInterface;
+use Yonna\VarDumper\Command\Descriptor\HtmlDescriptor;
+use Yonna\VarDumper\Dumper\CliDumper;
+use Yonna\VarDumper\Dumper\HtmlDumper;
+use Yonna\VarDumper\Server\DumpServer;
 
 /**
  * Starts a dump server to collect and output dumps on a single place with multiple formats support.

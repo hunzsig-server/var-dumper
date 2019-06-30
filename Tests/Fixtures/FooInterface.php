@@ -1,6 +1,6 @@
 <?php
 
-namespace Symfony\Component\VarDumper\Tests\Fixtures;
+namespace Yonna\VarDumper\Tests\Fixtures;
 
 interface FooInterface
 {
