@@ -18,7 +18,7 @@ var-dumper库是yonna专用dumper包
 
 ##### 可以通过composer安装：`composer require yonna/var-dumper`
 
-##### 可以通过git下载：`git clone https://github.com/yonna/var-dumper.git`
+##### 可以通过git下载：`git clone https://github.com/yonna-framework/var-dumper.git`
 
 > Yonna demo：[GOTO yonna](https://github.com/yonna-framework/yonna)
 
