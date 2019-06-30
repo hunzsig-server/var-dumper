@@ -24,8 +24,7 @@ var-dumper库是yonna专用dumper包
 
 ### Example
 
-> 使用Vardumper打印你的参数吧
-> 打印结果后，按 Alt+1 缩小字体，按 Alt+2 放大字体
+> 使用Vardumper打印你的参数吧。打印结果后，按 Alt+1 缩小字体，按 Alt+2 放大字体
 ```php
 <?php
     $str = 'hello yonna';
