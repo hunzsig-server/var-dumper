@@ -44,7 +44,7 @@ class HtmlDumper extends CliDumper
             'default' => 'background:none; color:#CC7832; line-height:1.2em; font:14px PingFang SC, Menlo, Monaco, Consolas, monospace; word-wrap: break-word; white-space: pre-wrap; position:relative; z-index:99999; word-break: break-all',
             'num' => 'font-weight:bold; color:#1753de',
             'const' => 'font-weight:bold',
-            'str' => 'color:#629755;',
+            'str' => 'color:#34881f;',
             'note' => 'color:#0c1596',
             'ref' => 'color:#6E6E6E',
             'public' => 'color:#262626',

@@ -118,7 +118,7 @@ pre.sf-dump {
     color: #CC7832;
     background: none;
 }
-.dumped-tag > .sf-dump .sf-dump-str { color: #629755; }
+.dumped-tag > .sf-dump .sf-dump-str { color: #34881f; }
 .dumped-tag > .sf-dump .sf-dump-private,
 .dumped-tag > .sf-dump .sf-dump-protected,
 .dumped-tag > .sf-dump .sf-dump-public { color: #262626; }
